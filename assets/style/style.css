@@ -1,0 +1,381 @@
+@import"./fonts.css";
+@import"./reset.css";
+
+/* BASE CONFING */
+html{
+    scroll-behavior: smooth;
+}
+
+.row {
+    display: flex;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: 400vh;
+}
+
+.section_btn {
+    background: #00A4E5;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    width: 150px;
+    height: 40px;
+}
+.d-flex{
+    display: flex;
+}
+
+/* BASE CONFING */
+
+/*HERO SECTION*/
+.hero {
+    background: url(../img/hero_bg.jpg) #314052 no-repeat center/cover;
+    background-attachment:fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 41px 0 71px;
+    color: #FFF;
+}
+
+.hero_title {
+    text-align: center;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 6px;
+}
+
+.hero_subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero_scroll {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.hero_scroll:hover {
+    text-decoration: underline;
+    color: black;
+    transition: .3s;
+}
+
+/*HERO SECTION*/
+
+/*HEADER*/
+.header {
+    z-index: 999999;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 65px;
+    border-bottom: 1px solid #E6E6E6;
+    ;
+}
+
+.header_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_link {
+    color: #48555B;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.header_link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header_link:hover {
+    color: #00A4E5;
+    transition: 0.5s;
+}
+
+
+/*OUR STORY*/
+.story {
+    padding: 58px 0;
+}
+
+.story_title {
+    position: relative;
+    color: #48555B;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-bottom: 92px;
+}
+
+.story_title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+
+}
+
+.story_left {
+    max-width: 405px;
+}
+
+.story_sm-title {
+    color: #48555B;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.188px;
+    margin-bottom: 30px;
+}
+
+.section_link {
+    color: #16ACE8;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.17px;
+}
+
+.section_link:hover {
+    color: #82c2db;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.story_desk {
+    color: #48555B;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.188px;
+}
+
+.story_row {
+    column-gap: 30px;
+}
+
+.story_card {
+    height: 224px;
+    padding: 14px 15px;
+    transition: 1s;
+}
+
+.story_card_fr {
+    background: url(../img/story_1.jpg) no-repeat ;
+    background-position: center;
+    background-size: 100%;
+}
+
+.story_card_sc {
+    background: url(../img/story_2.jpg) no-repeat ;
+     background-position: center;
+     background-size: 100%;
+}
+
+.story_card_th {
+    background: url(../img/story_3.jpg) no-repeat ;
+     background-position: center;
+     background-size: 100%;
+}
+
+.story_card:hover{
+    background-size: 140%;
+}
+
+.story_lg-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.188px;
+}
+
+/*OUR STORY*/
+
+/*OUR CAPABILITIES*/
+.capabilities {
+    padding: 62px 0 115px;
+    color: #48555B;
+}
+
+
+ .capabilites_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.capabilites_title {
+    position: relative;
+    color: #48555B;
+    font-size: 18px;
+    font-weight: 700;
+    max-height: 25px;
+    letter-spacing: 2px;
+}
+
+.capabilites_title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+}
+
+.capabilities_services {
+    display: flex;
+}
+
+.capabilites_spect {
+    color: #48555B;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    max-width: 405px;
+    margin-right: 32px;
+}
+
+
+.capabalities_cards {
+    margin-top: 78px;
+}
+
+.capabalities_img {
+    width: 68px;
+    height: 75px;
+    margin-bottom: 25px;
+
+}
+
+.capabalities_card-title {
+    color: #48555B;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 13px;
+}
+
+.capabalities_card-desk {
+    color: #48555B;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+}
+
+.capabalities_card {
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    padding: 38px 15px 38px 23px;
+    width: 295px;
+    height: 330px;
+} 
+/* OUR CAPABILITIES */
+
+
+
+/* GET IN TOUCH */
+.contacts{
+    height: 498px;
+    padding-top: 120px;
+    background: url(../img/footer_hero_bg.jpg) no-repeat #e9efff center/cover;
+    text-align: center;
+}
+
+.contacts_title{
+    color: #48555B;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    max-width: 350px;
+    margin: 0 auto 35px;
+}
+/* GET IN TOUCH */
+/* SING UP */
+.singup{
+    margin-top: -1px;
+    height: 100px;
+    background:#171819;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.singup_title{
+    margin-right: 50px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.846px;
+}
+
+.singup_email{
+    border: 1px solid #979797;
+    background: #FFF;
+    height: 40px;
+    width: 250px;
+    padding: 0 16px;
+}
+.singup_email::placeholder{
+    color: #48555B;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07px;
+}
+/* SING UP */
+
+/* FOOTER SECTION */
+/* FOOTER SECTION */
+
